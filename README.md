@@ -1,6 +1,6 @@
 ## Available WordPress Theme Name ##
 ```cmd
-npm install --global awptn
+npm install --global wp-name
 ```
 
 ## Usage ##
