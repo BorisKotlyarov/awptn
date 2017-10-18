@@ -1,7 +1,7 @@
 {
   "name": "wp-name",
   "description": "check available wordpress theme name",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "bin": {
     "wp-name": "bin/wp-name"
   },

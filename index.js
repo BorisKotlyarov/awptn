@@ -41,24 +41,12 @@ class CheckWordPressThemeAvailable {
     }
 
     check(themeName) {
-        Transports.fetch({url: wpRepository})
+        Transports.fetch({url: `${wpRepository}/${themeName}/`})
             .then((result)=> {
-                let regExp = '(<li><a href="(.+?)\/">(.+?)\/</a></li>)';
-                let arr = result.match(new RegExp(regExp, 'gmi'));
-
-                let ccc = [];
-
-                arr.forEach((item)=> {
-                    let e = item.match(new RegExp(regExp, ''));
-                    ccc.push(e[2]);
-                });
-
-                let indexOf = ccc.indexOf(themeName);
-
-                if (indexOf !== -1) {
+                if (result.statusCode !== 404) {
                     console.log(`Theme with the name ${themeName} already exists!`);
                 } else {
-                    console.log(`Congratulations! This theme name is available!`);
+                    console.log(`Congratulations! ${themeName} theme name is available!`);
                 }
             });
     }

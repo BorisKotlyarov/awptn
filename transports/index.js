@@ -34,8 +34,11 @@ class HttpRequest {
 
         let req = transport.request(options, res => {
                 res.setEncoding('utf8');
-        res.on('data', data => response += data )
-    .on('end', () => resolve(response) );
+        res.on('data', data => { response += data; } )
+            .on('end', () => {
+                resolve({body: response, statusCode: res.statusCode});
+            } );
+
     });
 
         req.on('error', error => reject(error) );
