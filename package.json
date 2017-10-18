@@ -1,0 +1,20 @@
+{
+  "name": "awptn",
+  "description": "check available wordpress theme name",
+  "version": "1.0.0",
+  "bin": {
+    "dns": "bin/wp-name"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BorisKotlyarov/awptn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BorisKotlyarov/awptn/issues"
+  },
+  "homepage": "https://github.com/BorisKotlyarov/awptn#readme",
+  "dependencies": {},
+  "devDependencies": {},
+  "author": "Boris Kotlyarov",
+  "license": "MIT"
+}
