@@ -1,9 +1,9 @@
 {
   "name": "awptn",
   "description": "check available wordpress theme name",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
-    "dns": "bin/wp-name"
+    "wp-name": "bin/wp-name"
   },
   "repository": {
     "type": "git",

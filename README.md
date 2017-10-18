@@ -5,9 +5,9 @@ npm install --global awptn
 
 ## Usage ##
 ```cmd
-awptn <theme name>
+wp-name <theme name>
 
 //Example
 
-awptn dragonfly
+wp-name dragonfly
 ```
